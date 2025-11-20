@@ -1,0 +1,46 @@
+# Comentário: Exemplo básico de variáveis
+let idade: int = 25;
+let altura: float = 1.75;
+let nome: string = "João Silva";
+let ativo: bool = true;
+
+# Função simples
+fn saudacao(nome: string): void {
+    print("Olá, " + nome + "!");
+}
+
+# Função com cálculo
+fn calcular_area(largura: float, altura: float): float {
+    return largura * altura;
+}
+
+# Função com condicional
+fn eh_maior_idade(idade: int): bool {
+    if (idade >= 18) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+# Loop while
+fn contar_ate(limite: int): void {
+    let contador: int = 0;
+    while (contador < limite) {
+        print(contador);
+        contador = contador + 1;
+    }
+}
+
+# Programa principal
+saudacao(nome);
+let area: float = calcular_area(10.0, 5.5);
+print("Área calculada: " + area);
+
+if (eh_maior_idade(idade)) {
+    print("É maior de idade");
+} else {
+    print("É menor de idade");
+}
+
+contar_ate(5);
